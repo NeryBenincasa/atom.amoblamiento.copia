@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const id = section.getAttribute('id');
       const link = document.querySelector(`.header__link[href="#${id}"]`);
 
-      if (link) {
+      if (link && !link.classList.contains('header__link--cta')) {
         if (scrollY >= top && scrollY < top + height) {
           link.style.color = 'var(--color-2)';
         } else {
