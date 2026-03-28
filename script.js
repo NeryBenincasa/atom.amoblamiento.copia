@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ===== Scroll animations =====
-  const fadeElements = document.querySelectorAll('.section__title, .section__subtitle, .trabajo, .nosotros__contenido, .nosotros__imagen, .contacto__form, .contacto__info');
+  const fadeElements = document.querySelectorAll('.section__title, .section__subtitle, .nosotros__contenido, .nosotros__imagen, .contacto__form, .contacto__info');
   fadeElements.forEach(el => el.classList.add('fade-in'));
 
   const observer = new IntersectionObserver((entries) => {
