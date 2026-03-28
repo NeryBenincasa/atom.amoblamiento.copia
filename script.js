@@ -140,16 +140,10 @@ document.addEventListener('DOMContentLoaded', () => {
         entry.target.classList.add('visible');
         observer.unobserve(entry.target);
 
-        // Trigger counter and logo animation when nosotros section is visible
-        if (entry.target.closest('.nosotros')) {
-          if (!countersAnimated) {
-            countersAnimated = true;
-            animateCounters();
-          }
-          const logoAnim = document.getElementById('logoAnim');
-          if (logoAnim && !logoAnim.classList.contains('logo-anim--active')) {
-            logoAnim.classList.add('logo-anim--active');
-          }
+        // Trigger counter animation when stats section is visible
+        if (!countersAnimated && entry.target.closest('.nosotros')) {
+          countersAnimated = true;
+          animateCounters();
         }
       }
     });
