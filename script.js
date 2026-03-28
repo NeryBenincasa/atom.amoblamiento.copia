@@ -145,12 +145,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const data = new FormData(form);
     const nombre = data.get('nombre');
+    const email = data.get('email');
+    const telefono = data.get('telefono');
+    const servicio = data.get('servicio');
+    const mensaje = data.get('mensaje');
 
-    // Build WhatsApp message
-    const mensaje = `Hola, soy ${nombre}. ${data.get('mensaje')}`;
-    const telefono = '+5493416014515'; // Replace with actual number
-    const waUrl = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    let texto = `Hola! Soy *${nombre}*.\n`;
+    if (email) texto += `Email: ${email}\n`;
+    if (telefono) texto += `Tel: ${telefono}\n`;
+    if (servicio) texto += `Servicio: ${servicio}\n`;
+    texto += `\n${mensaje}`;
 
+    const waUrl = `https://wa.me/5493416014515?text=${encodeURIComponent(texto)}`;
     window.open(waUrl, '_blank');
     form.reset();
   });
