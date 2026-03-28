@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ===== Hero carousel =====
+  const slides = document.querySelectorAll('.hero__slide');
+  let currentSlide = 0;
+
+  if (slides.length > 1) {
+    setInterval(() => {
+      slides[currentSlide].classList.remove('hero__slide--active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('hero__slide--active');
+    }, 4000);
+  }
+
   // ===== Header scroll effect =====
   const header = document.getElementById('header');
   window.addEventListener('scroll', () => {
