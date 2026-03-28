@@ -140,10 +140,17 @@ document.addEventListener('DOMContentLoaded', () => {
         entry.target.classList.add('visible');
         observer.unobserve(entry.target);
 
-        // Trigger counter animation when stats section is visible
-        if (!countersAnimated && entry.target.closest('.nosotros')) {
-          countersAnimated = true;
-          animateCounters();
+        // Trigger counter and video animation when nosotros section is visible
+        if (entry.target.closest('.nosotros')) {
+          if (!countersAnimated) {
+            countersAnimated = true;
+            animateCounters();
+          }
+          const video = document.getElementById('logoVideo');
+          if (video && video.paused && !video.dataset.played) {
+            video.dataset.played = 'true';
+            video.play();
+          }
         }
       }
     });
