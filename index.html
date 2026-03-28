@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atom Amoblamiento | Muebles a Medida</title>
+  <meta name="description" content="Atom Amoblamiento - Diseñamos y fabricamos muebles a medida para tu hogar. Cocinas, dormitorios, baños y más.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <img src="imagenes/logo.png" alt="Atom Amoblamiento">
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__menu">
+          <li><a href="#inicio" class="header__link">Inicio</a></li>
+          <li><a href="#trabajos" class="header__link">Trabajos</a></li>
+          <li><a href="#nosotros" class="header__link">Nosotros</a></li>
+          <li><a href="#contacto" class="header__link header__link--cta">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <div class="container hero__inner">
+      <h1 class="hero__title">Diseñamos el mueble<br>que imaginás</h1>
+      <p class="hero__subtitle">Fabricación a medida con materiales de primera calidad. Transformamos tus ideas en espacios funcionales y elegantes.</p>
+      <a href="#contacto" class="btn btn--primary">Pedí tu presupuesto</a>
+    </div>
+  </section>
+
+  <!-- Galería de Trabajos -->
+  <section class="trabajos" id="trabajos">
+    <div class="container">
+      <h2 class="section__title">Nuestros Trabajos</h2>
+      <p class="section__subtitle">Cada proyecto es único. Mirá algunos de los espacios que diseñamos y fabricamos.</p>
+
+      <div class="trabajos__filtros">
+        <button class="filtro filtro--activo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="cocinas">Cocinas</button>
+        <button class="filtro" data-filtro="dormitorios">Dormitorios</button>
+        <button class="filtro" data-filtro="banos">Baños</button>
+      </div>
+
+      <div class="trabajos__grid" id="galeria">
+        <!-- Cocinas -->
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina1.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina2.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina3.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina4.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina5.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina6.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina7.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina8.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina9.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina10.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina11.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina12.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina13.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina14.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina15.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina16.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina17.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina18.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+        <div class="trabajo" data-categoria="cocinas">
+          <img src="imagenes/cocinas/cocina19.png" alt="Cocina a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Cocina</span></div>
+        </div>
+
+        <!-- Dormitorios -->
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio1.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio2.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio3.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio4.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio5.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio6.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio7.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio8.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio9.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio10.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio11.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio12.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio13.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio14.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+        <div class="trabajo" data-categoria="dormitorios">
+          <img src="imagenes/dormitorios/dormitorio15.png" alt="Dormitorio a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Dormitorio</span></div>
+        </div>
+
+        <!-- Baños -->
+        <div class="trabajo" data-categoria="banos">
+          <img src="imagenes/banos/bano1.png" alt="Baño a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Baño</span></div>
+        </div>
+        <div class="trabajo" data-categoria="banos">
+          <img src="imagenes/banos/bano2.png" alt="Baño a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Baño</span></div>
+        </div>
+        <div class="trabajo" data-categoria="banos">
+          <img src="imagenes/banos/bano3.png" alt="Baño a medida" loading="lazy">
+          <div class="trabajo__overlay"><span>Baño</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section class="nosotros" id="nosotros">
+    <div class="container nosotros__inner">
+      <div class="nosotros__contenido">
+        <h2 class="section__title section__title--left">Sobre Nosotros</h2>
+        <p>En <strong>Atom Amoblamiento</strong> nos dedicamos al diseño y fabricación de muebles a medida. Cada proyecto que realizamos es único, pensado y ejecutado para adaptarse a las necesidades y el estilo de vida de nuestros clientes.</p>
+        <p>Trabajamos con materiales de primera calidad y cuidamos cada detalle del proceso, desde el diseño hasta la instalación final. Nuestro compromiso es transformar tus ideas en espacios que combinen funcionalidad y estética.</p>
+        <div class="nosotros__stats">
+          <div class="stat">
+            <span class="stat__numero" data-target="10">0</span><span class="stat__signo">+</span>
+            <span class="stat__label">Años de experiencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat__numero" data-target="500">0</span><span class="stat__signo">+</span>
+            <span class="stat__label">Proyectos realizados</span>
+          </div>
+          <div class="stat">
+            <span class="stat__numero" data-target="100">0</span><span class="stat__signo">%</span>
+            <span class="stat__label">A medida</span>
+          </div>
+        </div>
+      </div>
+      <div class="nosotros__imagen">
+        <div class="nosotros__imagen-deco"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <h2 class="section__title">Contactanos</h2>
+      <p class="section__subtitle">¿Tenés un proyecto en mente? Escribinos y te asesoramos sin compromiso.</p>
+
+      <div class="contacto__inner">
+        <form class="contacto__form" id="contactForm">
+          <div class="form__group">
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form__group">
+            <input type="email" id="email" name="email" placeholder="Tu email" required>
+          </div>
+          <div class="form__group">
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+          </div>
+          <div class="form__group">
+            <select id="servicio" name="servicio">
+              <option value="" disabled selected>¿Qué necesitás?</option>
+              <option value="cocina">Cocina a medida</option>
+              <option value="dormitorio">Dormitorio / Vestidor</option>
+              <option value="bano">Mueble de baño</option>
+              <option value="otro">Otro proyecto</option>
+            </select>
+          </div>
+          <div class="form__group form__group--full">
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+        </form>
+
+        <div class="contacto__info">
+          <div class="contacto__info-item">
+            <div class="contacto__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>Teléfono</strong>
+              <p>+54 9 3416014515</p>
+            </div>
+          </div>
+          <div class="contacto__info-item">
+            <div class="contacto__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <p>info@atomamoblamiento.com</p>
+            </div>
+          </div>
+          <div class="contacto__info-item">
+            <div class="contacto__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Ubicación</strong>
+              <p>Rosario, Argentina</p>
+            </div>
+          </div>
+          <div class="contacto__info-item">
+            <div class="contacto__info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="imagenes/logo.png" alt="Atom Amoblamiento" class="footer__logo">
+        <p>Muebles a medida para tu hogar. Diseño, calidad y compromiso en cada proyecto.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#trabajos">Cocinas</a></li>
+          <li><a href="#trabajos">Dormitorios</a></li>
+          <li><a href="#trabajos">Baños</a></li>
+          <li><a href="#trabajos">Vestidores</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contacto</h4>
+        <p>+54 11 1234-5678</p>
+        <p>info@atomamoblamiento.com</p>
+        <p>Buenos Aires, Argentina</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Atom Amoblamiento. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Cerrar">&times;</button>
+    <button class="lightbox__prev" aria-label="Anterior">&#10094;</button>
+    <button class="lightbox__next" aria-label="Siguiente">&#10095;</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
