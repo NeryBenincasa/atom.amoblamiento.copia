@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
 
         // Trigger counter animation when stats section is visible
         if (!countersAnimated && entry.target.closest('.nosotros')) {
@@ -134,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.05, rootMargin: '0px 0px 50px 0px' });
 
   fadeElements.forEach(el => observer.observe(el));
 
